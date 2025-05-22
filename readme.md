@@ -31,12 +31,22 @@ Data Size: Over 1 million rows, 12+ fields
 
 📦 Agriculture_sql_project
 
- ┣ 📄 Crop_data.csv          --> Dataset
- ┣ 📄 create_crop_data.sql   --> Table schema
- ┣ 📄 analysis_queries.sql   --> All advanced SQL queries
- ┗ 📄 README.md              --> Project documentation
+  📄 Crop_data.csv  --> Dataset
+  📄 create_crop_data.sql --> Table schema
+  📄 analysis_queries.sql --> All advanced SQL queries
+  📄 README.md  --> Project documentation
+
+⚙️ Project Setup
+
+To run this project locally:
+
+1. Load the dataset using the provided create_crop_data.sql in PostgreSQL.
 
 
+2. Import Crop_data.csv into the crop_data table.
+
+
+3. Execute queries from analysis_queries.sql for insights.
 
 ---
 
@@ -147,11 +157,24 @@ HAVING AVG(yield_ton_per_hec) < 1 AND COUNT(DISTINCT state_name) >= 3;
 ✅ What I Learned
 
 Practical experience with large datasets
+Usage of complex SQL clauses: WITH, RANK() OVER, HAVING, and GROUP BY Agricultural insights using real-world data
 
-Usage of complex SQL clauses: WITH, RANK() OVER, HAVING, and GROUP BY
+📊 Key Insights & Learnings
 
-Agricultural insights using real-world data
+Cotton has the highest total production in several states.
 
-Optimization of
+Crops with pH between 6–7.5 show better average yields.
+
+Multiple crops are grown under more than one crop type.
+
+Learned to apply complex SQL techniques like CTE, RANK(), and conditional filters on real data.
+
+
+
+---
+
+🔗 Connect with Me
+
+LinkedIn Profile
 
 
