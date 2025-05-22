@@ -157,17 +157,24 @@ HAVING AVG(yield_ton_per_hec) < 1 AND COUNT(DISTINCT state_name) >= 3;
 ✅ What I Learned
 
 Practical experience with large datasets
-Usage of complex SQL clauses: WITH, RANK() OVER, HAVING, and GROUP BY Agricultural insights using real-world data
+Usage of complex SQL clauses: WITH, RANK() OVER, HAVING, and GROUP BY Agricultural insights using real-world data Learned to apply complex SQL techniques like CTE, RANK(), and conditional filters on real data.
+
+---
 
 📊 Key Insights & Learnings
 
-Cotton has the highest total production in several states.
+Gujarat leads in cotton production, confirming its status as India’s top cotton-producing state.
 
-Crops with pH between 6–7.5 show better average yields.
+Rice and Wheat remain the most widely cultivated crops across multiple states with consistent high yield per hectare.
 
-Multiple crops are grown under more than one crop type.
+Maharashtra and Madhya Pradesh show strong performance in soybean and pulses production respectively.
 
-Learned to apply complex SQL techniques like CTE, RANK(), and conditional filters on real data.
+Crops like Millets are grown in diverse agro-climatic zones but often have lower average yields.
+
+Some crops like cotton and maize are cultivated across multiple crop types (Kharif, Rabi, Zaid).
+
+States with pH between 6 to 7.5 show better average yield and rainfall balance, ideal for balanced crop growth.
+
 
 
 
