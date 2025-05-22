@@ -51,6 +51,7 @@ FROM crop_data
 GROUP BY crop
 ORDER BY avg_yield DESC
 LIMIT 5;
+```
 
 2️⃣ Second Most Productive Crop in Each State
 
