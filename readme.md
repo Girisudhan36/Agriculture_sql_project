@@ -1,4 +1,4 @@
-🌾 # Agriculture SQL Project – Crop Production Analysis #
+## 🌾  Agriculture SQL Project – Crop Production Analysis ##
 
 This project showcases comprehensive analysis of Indian agricultural crop production using advanced SQL techniques. It is designed to demonstrate data analytics skills relevant to agriculture and business intelligence roles.
 
