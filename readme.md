@@ -1,11 +1,11 @@
-🌾 Agriculture SQL Project – Crop Production Analysis
+🌾 # Agriculture SQL Project – Crop Production Analysis #
 
 This project showcases comprehensive analysis of Indian agricultural crop production using advanced SQL techniques. It is designed to demonstrate data analytics skills relevant to agriculture and business intelligence roles.
 
 
 ---
 
-📁 Dataset Overview
+## 📁  Dataset Overview ##
 
 Source: Kaggle (1M+ rows)
 
@@ -19,7 +19,7 @@ Key Fields: state_name, crop, crop_type, nitrogen, rainfall, ph, temperature, pr
 
 ---
 
-🗄 Database Configuration
+## 🗄 Database Configuration ##
 
 SQL Engine: PostgreSQL (can be adapted to MySQL, MS SQL Server)
 
@@ -36,7 +36,9 @@ Data Size: Over 1 million rows, 12+ fields
   📄 analysis_queries.sql --> All advanced SQL queries
   📄 README.md  --> Project documentation
 
-⚙️ Project Setup
+---
+
+## ⚙️ Project Setup ##
 
 To run this project locally:
 
@@ -50,22 +52,22 @@ To run this project locally:
 
 ---
 
-🔍 SQL Analysis Performed
+## 🔍 SQL Analysis Performed ##
 
 All queries are available in analysis_queries.sql. Below are the insights derived using advanced SQL queries:
 
-#### 1️⃣ Top 5 Crops by Average Yield  ####
+### 1️⃣ Top 5 Crops by Average Yield  ###
 
-``` ```sql...
+``` sql...
 SELECT crop, 
 ROUND(AVG(yield_ton_per_hec), 2) AS avg_yield
 FROM crop_data
 GROUP BY crop
 ORDER BY avg_yield DESC
 LIMIT 5;
-``` ```
+``` 
 
-2️⃣ Second Most Productive Crop in Each State
+### 2️⃣ Second Most Productive Crop in Each State ###
 
 ```sql...
 WITH ranked AS (
@@ -80,7 +82,7 @@ SELECT * FROM ranked WHERE rank = 2;
 
 ```
 
-3️⃣ State with Highest Total Cotton Production
+### 3️⃣ State with Highest Total Cotton Production ###
 
 ```sql...
 SELECT state_name, 
@@ -92,7 +94,7 @@ ORDER BY total_cotton_production DESC
 LIMIT 1;
 ```
 
-4️⃣ Avg. Rainfall & Temp by Crop Type (pH 6-7.5)
+### 4️⃣ Avg. Rainfall & Temp by Crop Type (pH 6-7.5) ###
 
 ```sql...
 SELECT crop_type,
@@ -103,7 +105,7 @@ WHERE ph BETWEEN 6 AND 7.5
 GROUP BY crop_type;
 ```
 
-5️⃣ Crop Rank in Each State by Production
+### 5️⃣ Crop Rank in Each State by Production ###
 
 ```sql...
 SELECT state_name, 
@@ -115,7 +117,7 @@ FROM crop_data
 GROUP BY state_name, crop;
 ```
 
-6️⃣ Crops Grown in More Than One Crop Type
+### 6️⃣ Crops Grown in More Than One Crop Type ###
 
 ```sql...
 SELECT crop, 
@@ -125,7 +127,7 @@ GROUP BY crop
 HAVING COUNT(DISTINCT crop_type) > 1;
 ```
 
-7️⃣ Top 3 Crops by Average Yield per State
+### 7️⃣ Top 3 Crops by Average Yield per State ###
 
 ```sql...
 WITH ranked AS (
@@ -141,7 +143,7 @@ SELECT * FROM ranked
  WHERE rank <= 3;
 ```
 
-8️⃣ Low-Yield Crops Grown in at Least 3 States
+### 8️⃣ Low-Yield Crops Grown in at Least 3 States ###
 
 ```sql...
 SELECT crop,
@@ -154,14 +156,14 @@ HAVING AVG(yield_ton_per_hec) < 1 AND COUNT(DISTINCT state_name) >= 3;
 
 ---
 
-✅ What I Learned
+ ### ✅ What I Learned ###
 
 Practical experience with large datasets
 Usage of complex SQL clauses: WITH, RANK() OVER, HAVING, and GROUP BY Agricultural insights using real-world data Learned to apply complex SQL techniques like CTE, RANK(), and conditional filters on real data.
 
 ---
 
-📊 Key Insights & Learnings
+### 📊 Key Insights & Learnings ###
 
 Gujarat leads in cotton production, confirming its status as India’s top cotton-producing state.
 
