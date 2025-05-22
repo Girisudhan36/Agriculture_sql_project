@@ -31,9 +31,9 @@ Data Size: Over 1 million rows, 12+ fields
 
 📦 Agriculture_sql_project
 
-  📄 Crop_data.csv  --> Dataset
-  📄 create_crop_data.sql --> Table schema
-  📄 analysis_queries.sql --> All advanced SQL queries
+  📄 Crop_data.csv  --> Dataset 
+  📄 create_crop_data.sql --> Table schema 
+  📄 analysis_queries.sql --> All advanced SQL queries 
   📄 README.md  --> Project documentation
 
 ---
