@@ -74,7 +74,7 @@ LIMIT 5;
 
 ### 2️⃣ Second Most Productive Crop in Each State ###
 
-```sql...
+```sql
 WITH ranked AS (
   SELECT crop, state_name, 
   SUM(production_in_tons) AS total_production,
@@ -89,7 +89,7 @@ SELECT * FROM ranked WHERE rank = 2;
 
 ### 3️⃣ State with Highest Total Cotton Production ###
 
-```sql...
+```sql
 SELECT state_name, 
 SUM(production_in_tons) AS total_cotton_production
 FROM crop_data
@@ -101,7 +101,7 @@ LIMIT 1;
 
 ### 4️⃣ Avg. Rainfall & Temp by Crop Type (pH 6-7.5) ###
 
-```sql...
+```sql
 SELECT crop_type,
  ROUND(AVG(rainfall), 2) AS avg_rainfall,
  ROUND(AVG(temperature), 2) AS avg_temperature
@@ -112,7 +112,7 @@ GROUP BY crop_type;
 
 ### 5️⃣ Crop Rank in Each State by Production ###
 
-```sql...
+```sql
 SELECT state_name, 
 crop, 
 SUM(production_in_tons) AS total_production,
@@ -124,7 +124,7 @@ GROUP BY state_name, crop;
 
 ### 6️⃣ Crops Grown in More Than One Crop Type ###
 
-```sql...
+```sql
 SELECT crop, 
 COUNT(DISTINCT crop_type) AS crop_type_count
 FROM crop_data
@@ -134,7 +134,7 @@ HAVING COUNT(DISTINCT crop_type) > 1;
 
 ### 7️⃣ Top 3 Crops by Average Yield per State ###
 
-```sql...
+```sql
 WITH ranked AS (
   SELECT state_name, 
   crop,
