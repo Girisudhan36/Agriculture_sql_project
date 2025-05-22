@@ -63,7 +63,7 @@ All queries are available in analysis_queries.sql. Below are the insights derive
 
 ### 1️⃣ Top 5 Crops by Average Yield  ###
 
-``` sql...
+```sql
 SELECT crop, 
 ROUND(AVG(yield_ton_per_hec), 2) AS avg_yield
 FROM crop_data
@@ -150,7 +150,7 @@ SELECT * FROM ranked
 
 ### 8️⃣ Low-Yield Crops Grown in at Least 3 States ###
 
-```sql...
+```sql
 SELECT crop,
  ROUND(AVG(yield_ton_per_hec), 4) AS avg_yield,
   COUNT(DISTINCT state_name) AS number_of_states
