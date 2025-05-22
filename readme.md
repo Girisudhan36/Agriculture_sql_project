@@ -54,16 +54,16 @@ To run this project locally:
 
 All queries are available in analysis_queries.sql. Below are the insights derived using advanced SQL queries:
 
-####1️⃣ Top 5 Crops by Average Yield ####
+#### 1️⃣ Top 5 Crops by Average Yield  ####
 
-```sql...
+``` ```sql...
 SELECT crop, 
 ROUND(AVG(yield_ton_per_hec), 2) AS avg_yield
 FROM crop_data
 GROUP BY crop
 ORDER BY avg_yield DESC
 LIMIT 5;
-```
+``` ```
 
 2️⃣ Second Most Productive Crop in Each State
 
