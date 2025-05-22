@@ -5,7 +5,7 @@ This project showcases comprehensive analysis of Indian agricultural crop produc
 
 ---
 
-## 📁  Dataset Overview ##
+### 📁  Dataset Overview ###
 
 Source: Kaggle (1M+ rows)
 
@@ -19,7 +19,7 @@ Key Fields: state_name, crop, crop_type, nitrogen, rainfall, ph, temperature, pr
 
 ---
 
-## 🗄 Database Configuration ##
+### 🗄 Database Configuration ###
 
 SQL Engine: PostgreSQL (can be adapted to MySQL, MS SQL Server)
 
@@ -27,18 +27,23 @@ Table Name: crop_data
 
 Data Size: Over 1 million rows, 12+ fields
 
-🧩 File Structure
+---
+
+### 🧩 File Structure ###
 
 📦 Agriculture_sql_project
 
   📄 Crop_data.csv  --> Dataset 
+
   📄 create_crop_data.sql --> Table schema 
+
   📄 analysis_queries.sql --> All advanced SQL queries 
+
   📄 README.md  --> Project documentation
 
 ---
 
-## ⚙️ Project Setup ##
+### ⚙️ Project Setup ###
 
 To run this project locally:
 
@@ -52,7 +57,7 @@ To run this project locally:
 
 ---
 
-## 🔍 SQL Analysis Performed ##
+### 🔍 SQL Analysis Performed ###
 
 All queries are available in analysis_queries.sql. Below are the insights derived using advanced SQL queries:
 
