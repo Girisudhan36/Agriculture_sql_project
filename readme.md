@@ -176,5 +176,6 @@ Learned to apply complex SQL techniques like CTE, RANK(), and conditional filter
 🔗 Connect with Me
 
 LinkedIn Profile
+[LinkedIn –Girisudhan](https://www.linkedin.com/in/girisudhan)
 
 
